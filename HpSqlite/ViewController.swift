@@ -9,8 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let show   = UILabel.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let btn1 = UIButton.init()
         btn1.frame = CGRect.init(x: 10, y: 100, width: 80, height: 80)
         btn1.backgroundColor = .red
@@ -38,30 +41,58 @@ class ViewController: UIViewController {
         btn4.setTitle("查", for: .normal)
         btn4.addTarget(self, action: #selector(queryEvent(_:)), for: .touchUpInside)
         self.view.addSubview(btn4)
+        
+        show.text  = "暂无数据"
+        show.frame = CGRect.init(x: 30, y: 200, width: UIScreen.main.bounds.width - 60, height: 300)
+        show.numberOfLines = 0
+        show.textColor = .black
+        show.textAlignment = .center
+        self.view.addSubview(show)
+        
     }
 
     /// 增
     @objc
     func creatEvent(_ btn: UIButton) -> Void {
+        var params:[String: Any] = [:]
+        params["id"]   = 123
+        params["name"] = "名字"
+        params["desc"] = "描述"
+        HpUserInfo.share.add(params)
+        var params1:[String: Any] = [:]
+        params1["id"]   = 456
+        params1["name"] = "名字"
+        params1["desc"] = "描述"
+        HpUserInfo.share.add(params1)
         
+        let dict0 = HpUserInfo.share.query(123)
+        let dict1 = HpUserInfo.share.query(456)
+        show.text = HpJsonString.toJSONString(dict0 ?? [:]) + HpJsonString.toJSONString(dict1 ?? [:])
     }
     
     /// 删
     @objc
     func deleteEvent(_ btn: UIButton) -> Void {
-        
+        HpUserInfo.share.delete(123)
+        let dict0 = HpUserInfo.share.query(123)
+        let dict1 = HpUserInfo.share.query(456)
+        show.text = HpJsonString.toJSONString(dict0 ?? [:]) + HpJsonString.toJSONString(dict1 ?? [:])
     }
     
     /// 改
     @objc
     func updateEvent(_ btn: UIButton) -> Void {
-        
+        HpUserInfo.share.update(456)
+        let dict0 = HpUserInfo.share.query(123)
+        let dict1 = HpUserInfo.share.query(456)
+        show.text = HpJsonString.toJSONString(dict0 ?? [:]) + HpJsonString.toJSONString(dict1 ?? [:])
     }
     
     /// 查
     @objc
     func queryEvent(_ btn: UIButton) -> Void {
-        
+        let dict0 = HpUserInfo.share.query(123)
+        show.text = HpJsonString.toJSONString(dict0 ?? [:])
     }
 
 }

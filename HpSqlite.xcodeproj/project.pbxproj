@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		7DDEFB7825AAB88B005FFAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDEFB7625AAB88B005FFAF9 /* LaunchScreen.storyboard */; };
 		7DDEFB8325AAB88B005FFAF9 /* HpSqliteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB8225AAB88B005FFAF9 /* HpSqliteTests.swift */; };
 		7DDEFB8E25AAB88B005FFAF9 /* HpSqliteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB8D25AAB88B005FFAF9 /* HpSqliteUITests.swift */; };
+		7DDEFBAE25AABD0B005FFAF9 /* HpSqManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFBAD25AABD0B005FFAF9 /* HpSqManager.swift */; };
+		7DDEFBB425AABF34005FFAF9 /* HpUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFBB325AABF34005FFAF9 /* HpUserInfo.swift */; };
+		7DDEFBBC25AAD086005FFAF9 /* HpJsonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFBBB25AAD086005FFAF9 /* HpJsonString.swift */; };
 		C9393E95966682A10E009599 /* Pods_HpSqlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038E629E5BAB1DBB4B63C0FF /* Pods_HpSqlite.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 		7DDEFB8925AAB88B005FFAF9 /* HpSqliteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HpSqliteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDEFB8D25AAB88B005FFAF9 /* HpSqliteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HpSqliteUITests.swift; sourceTree = "<group>"; };
 		7DDEFB8F25AAB88B005FFAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DDEFBAD25AABD0B005FFAF9 /* HpSqManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HpSqManager.swift; sourceTree = "<group>"; };
+		7DDEFBB325AABF34005FFAF9 /* HpUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HpUserInfo.swift; sourceTree = "<group>"; };
+		7DDEFBBB25AAD086005FFAF9 /* HpJsonString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HpJsonString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +97,6 @@
 				1E535C730021B56E734519C5 /* Pods-HpSqlite.debug.xcconfig */,
 				2D0A240D39694B4CF7425C96 /* Pods-HpSqlite.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +125,7 @@
 		7DDEFB6A25AAB889005FFAF9 /* HpSqlite */ = {
 			isa = PBXGroup;
 			children = (
+				7DDEFBAC25AABCCB005FFAF9 /* HpSqliteManager */,
 				7DDEFB6B25AAB889005FFAF9 /* AppDelegate.swift */,
 				7DDEFB6F25AAB889005FFAF9 /* ViewController.swift */,
 				7DDEFB7425AAB88B005FFAF9 /* Assets.xcassets */,
@@ -145,6 +151,24 @@
 				7DDEFB8F25AAB88B005FFAF9 /* Info.plist */,
 			);
 			path = HpSqliteUITests;
+			sourceTree = "<group>";
+		};
+		7DDEFBAC25AABCCB005FFAF9 /* HpSqliteManager */ = {
+			isa = PBXGroup;
+			children = (
+				7DDEFBAD25AABD0B005FFAF9 /* HpSqManager.swift */,
+				7DDEFBBB25AAD086005FFAF9 /* HpJsonString.swift */,
+				7DDEFBB225AABF05005FFAF9 /* 用户 */,
+			);
+			path = HpSqliteManager;
+			sourceTree = "<group>";
+		};
+		7DDEFBB225AABF05005FFAF9 /* 用户 */ = {
+			isa = PBXGroup;
+			children = (
+				7DDEFBB325AABF34005FFAF9 /* HpUserInfo.swift */,
+			);
+			path = "用户";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +346,9 @@
 			files = (
 				7DDEFB7025AAB889005FFAF9 /* ViewController.swift in Sources */,
 				7DDEFB6C25AAB889005FFAF9 /* AppDelegate.swift in Sources */,
+				7DDEFBB425AABF34005FFAF9 /* HpUserInfo.swift in Sources */,
+				7DDEFBAE25AABD0B005FFAF9 /* HpSqManager.swift in Sources */,
+				7DDEFBBC25AAD086005FFAF9 /* HpJsonString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

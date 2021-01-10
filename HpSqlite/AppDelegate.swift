@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor    = UIColor.groupTableViewBackground
         self.window?.rootViewController = ViewController.init()
         self.window?.makeKeyAndVisible()
+        
+        HpSqManager.share.creatTable()
+        
         return true
     }
     
