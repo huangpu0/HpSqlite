@@ -1,0 +1,6 @@
+framework module Pods_HpSqlite {
+  umbrella header "Pods-HpSqlite-umbrella.h"
+
+  export *
+  module * { export * }
+}

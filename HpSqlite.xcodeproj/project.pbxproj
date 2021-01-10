@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7DDEFB6C25AAB889005FFAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB6B25AAB889005FFAF9 /* AppDelegate.swift */; };
-		7DDEFB6E25AAB889005FFAF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB6D25AAB889005FFAF9 /* SceneDelegate.swift */; };
 		7DDEFB7025AAB889005FFAF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB6F25AAB889005FFAF9 /* ViewController.swift */; };
-		7DDEFB7325AAB889005FFAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDEFB7125AAB889005FFAF9 /* Main.storyboard */; };
 		7DDEFB7525AAB88B005FFAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDEFB7425AAB88B005FFAF9 /* Assets.xcassets */; };
 		7DDEFB7825AAB88B005FFAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDEFB7625AAB88B005FFAF9 /* LaunchScreen.storyboard */; };
 		7DDEFB8325AAB88B005FFAF9 /* HpSqliteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB8225AAB88B005FFAF9 /* HpSqliteTests.swift */; };
 		7DDEFB8E25AAB88B005FFAF9 /* HpSqliteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB8D25AAB88B005FFAF9 /* HpSqliteUITests.swift */; };
+		C9393E95966682A10E009599 /* Pods_HpSqlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038E629E5BAB1DBB4B63C0FF /* Pods_HpSqlite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038E629E5BAB1DBB4B63C0FF /* Pods_HpSqlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HpSqlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E535C730021B56E734519C5 /* Pods-HpSqlite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HpSqlite.debug.xcconfig"; path = "Target Support Files/Pods-HpSqlite/Pods-HpSqlite.debug.xcconfig"; sourceTree = "<group>"; };
+		2D0A240D39694B4CF7425C96 /* Pods-HpSqlite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HpSqlite.release.xcconfig"; path = "Target Support Files/Pods-HpSqlite/Pods-HpSqlite.release.xcconfig"; sourceTree = "<group>"; };
 		7DDEFB6825AAB889005FFAF9 /* HpSqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HpSqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDEFB6B25AAB889005FFAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DDEFB6D25AAB889005FFAF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7DDEFB6F25AAB889005FFAF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7DDEFB7225AAB889005FFAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DDEFB7425AAB88B005FFAF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DDEFB7725AAB88B005FFAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DDEFB7925AAB88B005FFAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9393E95966682A10E009599 /* Pods_HpSqlite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4179403CDA45E8EAE2CFAD1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				038E629E5BAB1DBB4B63C0FF /* Pods_HpSqlite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		593BF64DB37DE2D11A67CC6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E535C730021B56E734519C5 /* Pods-HpSqlite.debug.xcconfig */,
+				2D0A240D39694B4CF7425C96 /* Pods-HpSqlite.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7DDEFB5F25AAB889005FFAF9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,8 @@
 				7DDEFB8125AAB88B005FFAF9 /* HpSqliteTests */,
 				7DDEFB8C25AAB88B005FFAF9 /* HpSqliteUITests */,
 				7DDEFB6925AAB889005FFAF9 /* Products */,
+				593BF64DB37DE2D11A67CC6C /* Pods */,
+				4179403CDA45E8EAE2CFAD1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				7DDEFB6B25AAB889005FFAF9 /* AppDelegate.swift */,
-				7DDEFB6D25AAB889005FFAF9 /* SceneDelegate.swift */,
 				7DDEFB6F25AAB889005FFAF9 /* ViewController.swift */,
-				7DDEFB7125AAB889005FFAF9 /* Main.storyboard */,
 				7DDEFB7425AAB88B005FFAF9 /* Assets.xcassets */,
 				7DDEFB7625AAB88B005FFAF9 /* LaunchScreen.storyboard */,
 				7DDEFB7925AAB88B005FFAF9 /* Info.plist */,
@@ -135,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DDEFB9225AAB88B005FFAF9 /* Build configuration list for PBXNativeTarget "HpSqlite" */;
 			buildPhases = (
+				3B901FABC6CE55808787863A /* [CP] Check Pods Manifest.lock */,
 				7DDEFB6425AAB889005FFAF9 /* Sources */,
 				7DDEFB6525AAB889005FFAF9 /* Frameworks */,
 				7DDEFB6625AAB889005FFAF9 /* Resources */,
+				9E5658DB5D4AAA24EECC6FA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +254,6 @@
 			files = (
 				7DDEFB7825AAB88B005FFAF9 /* LaunchScreen.storyboard in Resources */,
 				7DDEFB7525AAB88B005FFAF9 /* Assets.xcassets in Resources */,
-				7DDEFB7325AAB889005FFAF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +273,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B901FABC6CE55808787863A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HpSqlite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5658DB5D4AAA24EECC6FA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HpSqlite/Pods-HpSqlite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HpSqlite/Pods-HpSqlite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HpSqlite/Pods-HpSqlite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7DDEFB6425AAB889005FFAF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +322,6 @@
 			files = (
 				7DDEFB7025AAB889005FFAF9 /* ViewController.swift in Sources */,
 				7DDEFB6C25AAB889005FFAF9 /* AppDelegate.swift in Sources */,
-				7DDEFB6E25AAB889005FFAF9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +357,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7DDEFB7125AAB889005FFAF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7DDEFB7225AAB889005FFAF9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7DDEFB7625AAB88B005FFAF9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,12 +486,14 @@
 		};
 		7DDEFB9325AAB88B005FFAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E535C730021B56E734519C5 /* Pods-HpSqlite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VN752HTB2;
 				INFOPLIST_FILE = HpSqlite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +507,14 @@
 		};
 		7DDEFB9425AAB88B005FFAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D0A240D39694B4CF7425C96 /* Pods-HpSqlite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VN752HTB2;
 				INFOPLIST_FILE = HpSqlite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
