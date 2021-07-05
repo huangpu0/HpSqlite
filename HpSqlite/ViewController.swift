@@ -35,6 +35,8 @@ class ViewController: UIViewController {
         btn3.addTarget(self, action: #selector(updateEvent(_:)), for: .touchUpInside)
         self.view.addSubview(btn3)
         
+        print("测试代码")
+        
         let btn4 = UIButton.init()
         btn4.frame = CGRect.init(x: 280, y: 100, width: 80, height: 80)
         btn4.backgroundColor = .red
