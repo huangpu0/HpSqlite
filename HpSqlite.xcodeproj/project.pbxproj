@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DB8858F26155C5E0059549D /* HpSQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB8858E26155C5E0059549D /* HpSQLite.swift */; };
 		7DDEFB6C25AAB889005FFAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB6B25AAB889005FFAF9 /* AppDelegate.swift */; };
 		7DDEFB7025AAB889005FFAF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDEFB6F25AAB889005FFAF9 /* ViewController.swift */; };
 		7DDEFB7525AAB88B005FFAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDEFB7425AAB88B005FFAF9 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		038E629E5BAB1DBB4B63C0FF /* Pods_HpSqlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HpSqlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E535C730021B56E734519C5 /* Pods-HpSqlite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HpSqlite.debug.xcconfig"; path = "Target Support Files/Pods-HpSqlite/Pods-HpSqlite.debug.xcconfig"; sourceTree = "<group>"; };
 		2D0A240D39694B4CF7425C96 /* Pods-HpSqlite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HpSqlite.release.xcconfig"; path = "Target Support Files/Pods-HpSqlite/Pods-HpSqlite.release.xcconfig"; sourceTree = "<group>"; };
+		7DB8858E26155C5E0059549D /* HpSQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HpSQLite.swift; sourceTree = "<group>"; };
 		7DDEFB6825AAB889005FFAF9 /* HpSqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HpSqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDEFB6B25AAB889005FFAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DDEFB6F25AAB889005FFAF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				7DDEFBAD25AABD0B005FFAF9 /* HpSqManager.swift */,
 				7DDEFBBB25AAD086005FFAF9 /* HpJsonString.swift */,
+				7DB8858E26155C5E0059549D /* HpSQLite.swift */,
 				7DDEFBB225AABF05005FFAF9 /* 用户 */,
 			);
 			path = HpSqliteManager;
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DDEFB7025AAB889005FFAF9 /* ViewController.swift in Sources */,
+				7DB8858F26155C5E0059549D /* HpSQLite.swift in Sources */,
 				7DDEFB6C25AAB889005FFAF9 /* AppDelegate.swift in Sources */,
 				7DDEFBB425AABF34005FFAF9 /* HpUserInfo.swift in Sources */,
 				7DDEFBAE25AABD0B005FFAF9 /* HpSqManager.swift in Sources */,

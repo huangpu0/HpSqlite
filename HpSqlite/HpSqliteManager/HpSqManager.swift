@@ -10,7 +10,7 @@ import SQLite
 
 private let App_Name = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName")
 
-public let db: Connection? = HpSqManager.share.getdb()
+public let db1: Connection? = HpSqManager.share.getdb()
 
 class HpSqManager: NSObject {
 
@@ -28,7 +28,13 @@ class HpSqManager: NSObject {
         }catch {
             print("数据库文件Error-\(error)")
         }
-        return try? Connection("\(db_File)/\(App_Name ?? "Sqlite").db")
+        let  new_db = try? Connection("\(db_File)/\(App_Name ?? "Sqlite").db")
+        new_db?.busyTimeout = 15
+        new_db?.busyHandler({ (index) -> Bool in
+            print("new_db===\(index)")
+            return false
+        })
+        return new_db
     }
     
     /// 获取table
@@ -40,4 +46,9 @@ class HpSqManager: NSObject {
     func creatTable() -> Void {
         HpUserInfo.share.creatTable()
     }
+    
+    func creat_newTable(_ icon: String) -> Void {
+        debugPrint("icon==\(icon)")
+    }
+  
 }

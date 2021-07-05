@@ -49,6 +49,9 @@ class ViewController: UIViewController {
         show.textAlignment = .center
         self.view.addSubview(show)
         
+        
+       
+        
     }
 
     /// 增
@@ -68,24 +71,21 @@ class ViewController: UIViewController {
         let dict0 = HpUserInfo.share.query(123)
         let dict1 = HpUserInfo.share.query(456)
         show.text = HpJsonString.toJSONString(dict0 ?? [:]) + HpJsonString.toJSONString(dict1 ?? [:])
+        
+       
     }
     
     /// 删
     @objc
     func deleteEvent(_ btn: UIButton) -> Void {
-        HpUserInfo.share.delete(123)
-        let dict0 = HpUserInfo.share.query(123)
-        let dict1 = HpUserInfo.share.query(456)
-        show.text = HpJsonString.toJSONString(dict0 ?? [:]) + HpJsonString.toJSONString(dict1 ?? [:])
+        HpUserInfo.share.deleteTab()
+        
     }
     
     /// 改
     @objc
     func updateEvent(_ btn: UIButton) -> Void {
-        HpUserInfo.share.update(456)
-        let dict0 = HpUserInfo.share.query(123)
-        let dict1 = HpUserInfo.share.query(456)
-        show.text = HpJsonString.toJSONString(dict0 ?? [:]) + HpJsonString.toJSONString(dict1 ?? [:])
+        HpUserInfo.share.reset("userInfo", new: "userInfo22")
     }
     
     /// 查
